@@ -1,96 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Code Quiz Game</title>
-    <link rel="stylesheet" href="./assets/reset.css">
-    <link rel="stylesheet" href="./assets/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/reset.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
     <!--Add a header with the title of the game-->
     <!--Add a start button below that heading-->
     <header>
-        <h1>Code Quiz Game</h1>
-        <button>START</button>
+      <h1>Code Quiz Game</h1>
+      <button>START</button>
+      <div class="timer">
+        <span class="timer_text">Time:</span>
+        <span class="timer_sec">60</span>
+      </div>
     </header>
     <!--We need sections with a question and multiple choice answers-->
-    <section class="que_one">
-        <div>
-            <p>What does HTML stand for?</p>
+    <section class="quiz_one">
+      <div class="que_one">
+        <p>What does HTML stand for?</p>
+      </div>
+      <div class="choices">
+        <div class="choice">
+          <p>Huge telepathic master line</p>
         </div>
-        <div>
-            <p>Huge telepathic master line</p>
+        <div class="choice">
+          <p>Hyper text markup language</p>
         </div>
-        <div>
-            <p>Hyper text markup language</p>
+        <div class="choice">
+          <p>Hyphen text minute language</p>
         </div>
-        <div>
-            <p>Hyphen text minute language</p>
+        <div class="choice">
+          <p>Historical time measuring language</p>
         </div>
-        <div>
-            <p>Historical time measuring language</p>
-        </div>
+      </div>
     </section>
-    <section class="que_two">
-        <div>
-            <p>What does CSS stand for?</p>
+    <section class="quiz_two">
+      <div class="que_two">
+        <p>What does CSS stand for?</p>
+      </div>
+      <div class="choices">
+        <div class="choice">
+          <p>Cascading style sheets</p>
         </div>
-        <div>
-            <p>Cascading style sheets</p>
+        <div class="choice">
+          <p>Counting style sheets</p>
         </div>
-        <div>
-            <p>Counting style sheets</p>
+        <div class="choice">
+          <p>Celebrity star sign</p>
         </div>
-        <div>
-            <p>Celebrity star sign</p>
+        <div class="choice">
+          <p>Calling script sheet</p>
         </div>
-        <div>
-            <p>Calling script sheet</p>
-        </div>
+      </div>
     </section>
-    <section class="que_three">
-        <div>
-            <p>What does JS stand for?</p>
+    <section class="quiz_three">
+      <div class="que_three">
+        <p>What does JS stand for?</p>
+      </div>
+      <div class="choices">
+        <div class="choice">
+          <p>Jumping stars</p>
         </div>
-        <div>
-            <p>Jumping stars</p>
+        <div class="choice">
+          <p>Juggling singers</p>
         </div>
-        <div>
-            <p>Juggling singers</p>
+        <div class="choice">
+          <p>Java Script</p>
         </div>
-        <div>
-            <p>Java Script</p>
+        <div class="choice">
+          <p>Jameson Script</p>
         </div>
-        <div>
-            <p>Jameson Script</p>
-        </div>
+      </div>
     </section>
-    <section class="que_four">
-        <div>
-            <p>Where do you link your CSS to your HTML?</p>
+    <section class="quiz_four">
+      <div class="que_four">
+        <p>Where do you link your CSS to your HTML?</p>
+      </div>
+      <div class="choices">
+        <div class="choice">
+          <p>In the head element in the HTML</p>
         </div>
-        <div>
-            <p>In the head element in the HTML</p>
+        <div class="choice">
+          <p>In the header element in the HTML</p>
         </div>
-        <div>
-            <p>In the header element in the HTML</p>
+        <div class="choice">
+          <p>In the section element in the HTML</p>
         </div>
-        <div>
-            <p>In the section element in the HTML</p>
+        <div class="choice">
+          <p>In the CSS file</p>
         </div>
-        <div>
-            <p>In the CSS file</p>
-        </div>
+      </div>
     </section>
-
-
-
-
-
-
-
 
     <script src="/assets/script.js"></script>
-</body>
+  </body>
 </html>
