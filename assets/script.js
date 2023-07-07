@@ -1,3 +1,38 @@
+// add my array of questions
+var quizData = [
+    {
+        question: "What does HTML stand for?",
+        a: "Hyphen text markup language",
+        b: "Hiking to mount langley",
+        c: "Hysterical text marking line",
+        d: "Hyper text markup language",
+        correct: "d",
+    },
+    {
+        question: "What does CSS stand for?",
+        a: "Celebrity style sheet",
+        b: "Cascading style sheet",
+        c: "Career systems sheet",
+        d: "Challenging style sheet",
+        correct: "b",
+    },
+    {
+        question: "What does JS stand for?",
+        a: "Java script",
+        b: "Jumping stars",
+        c: "Java systems",
+        d: "Jamesons script",
+        correct: "a",
+    },
+    {
+        question: "Where do you link the CSS to the HTML?",
+        a: "In the body",
+        b: "In the head",
+        c: "In the section",
+        d: "In the CSS file",
+        correct: "b",
+    },
+];
 // declare all necessary classes and IDs from HTML 
 var quiz= document.getElementById('quiz')
 var optionEls = document.querySelectorAll('.option')
@@ -10,41 +45,6 @@ var submitBtn = document.getElementById('submit_btn')
 
 var currentQuiz = 0
 var score = 0
-// add my array of questions
-var quizData = [
-    {
-        question: "What does HTML stand for?",
-        a: "Hyphen text markup language",
-        b: "Hyper text markup lanaguage",
-        c: "Hysterical text marking line",
-        d: "Hiking to mount langley",
-        correct: "b",
-    },
-    {
-        question: "What does CSS stand for?",
-        a: "Cascading style sheet",
-        b: "Celebrity style sheet",
-        c: "Career systems sheet",
-        d: "Challenging style sheet",
-        correct: "a",
-    },
-    {
-        question: "What does JS stand for?",
-        a: "Jumping stars",
-        b: "Java systems",
-        c: "Java script",
-        d: "Jamesons script",
-        correct: "c",
-    },
-    {
-        question: "Where do you link the CSS to the HTML?",
-        a: "In the body",
-        b: "In the section",
-        c: "In the CSS file",
-        d: "In the head",
-        correct: "d",
-    },
-];
 // I need to call the loadQuiz() function first when the page loads
 loadQuiz()
 // create a function that displays the question to the user
@@ -58,8 +58,18 @@ function loadQuiz() {
     four_text.innerText = currentQuizData.d
 }
 
+//when win condition is met
+//function winGame() {
+//    quiz.textContent = "YOU WON!!!🏆 ";
+//    winCounter++
+//    startButton.disabled = false;
+//    setWins()
+//  }
+
+
+
 function deselectAnswers() {
-    optionEls.forEach(answerEl => answerEl.checked = false)
+    optionEls.forEach(optionEl => optionEl.checked = false)
 }
 function getSelected() {
     var answer
