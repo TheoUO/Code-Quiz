@@ -9,9 +9,9 @@
 
 ## Description 
 
-[Visit the Deployed Site](https://theouo.github.io/Password-Generator/)
+[Visit the Deployed Site](https://theouo.github.io/Code-Quiz/)
 
-For this project, I create a randomized password generator that allows the user to retrieve a variety of passwords which include numbers, letters, and special characters.
+For this project, I create a coding quiz game where users can test and improve their coding knowledge base.
 
 
 ![Site Langing Page](./images/codeQ.png)
