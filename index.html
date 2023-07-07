@@ -8,93 +8,30 @@
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
   <body>
-    <!--Add a header with the title of the game-->
-    <!--Add a start button below that heading-->
-    <header>
-      <h1>Code Quiz Game</h1>
-      <button class="start_btn">START</button>
-      <div class="timer">
-        <span class="timer_text">Time:</span>
-        <span class="timer_sec">60</span>
+    <div class="quiz-container" id="quiz">
+      <div class="quiz-header">
+        <h2 id="question">Question Text</h2>
+        <ul>
+          <li>
+            <input type="radio" name="option" id="option_one" class="option">
+            <label for="1." id="one_text">Option</label>
+          </li>
+          <li>
+            <input type="radio" name="option" id="option_two" class="option">
+            <label for="2." id="two_text">Option</label>
+          </li>
+          <li>
+            <input type="radio" name="option" id="option_three" class="option">
+            <label for="3." id="three_text">Option</label>
+          </li>
+          <li>
+            <input type="radio" name="option" id="option_four" class="option">
+            <label for="4." id="four_text">Option</label>
+          </li>
+        </ul>
       </div>
-    </header>
-    <!--We need sections with a question and multiple choice answers-->
-    <section class="quiz_one">
-      <div class="que_one">
-        <p>What does HTML stand for?</p>
-      </div>
-      <div class="choices">
-        <div class="choice">
-          <p>Huge telepathic master line</p>
-        </div>
-        <div class="choice">
-          <p>Hyper text markup language</p>
-        </div>
-        <div class="choice">
-          <p>Hyphen text minute language</p>
-        </div>
-        <div class="choice">
-          <p>Historical time measuring language</p>
-        </div>
-      </div>
-    </section>
-    <section class="quiz_two">
-      <div class="que_two">
-        <p>What does CSS stand for?</p>
-      </div>
-      <div class="choices">
-        <div class="choice">
-          <p>Cascading style sheets</p>
-        </div>
-        <div class="choice">
-          <p>Counting style sheets</p>
-        </div>
-        <div class="choice">
-          <p>Celebrity star sign</p>
-        </div>
-        <div class="choice">
-          <p>Calling script sheet</p>
-        </div>
-      </div>
-    </section>
-    <section class="quiz_three">
-      <div class="que_three">
-        <p>What does JS stand for?</p>
-      </div>
-      <div class="choices">
-        <div class="choice">
-          <p>Jumping stars</p>
-        </div>
-        <div class="choice">
-          <p>Juggling singers</p>
-        </div>
-        <div class="choice">
-          <p>Java Script</p>
-        </div>
-        <div class="choice">
-          <p>Jameson Script</p>
-        </div>
-      </div>
-    </section>
-    <section class="quiz_four">
-      <div class="que_four">
-        <p>Where do you link your CSS to your HTML?</p>
-      </div>
-      <div class="choices">
-        <div class="choice">
-          <p>In the head element in the HTML</p>
-        </div>
-        <div class="choice">
-          <p>In the header element in the HTML</p>
-        </div>
-        <div class="choice">
-          <p>In the section element in the HTML</p>
-        </div>
-        <div class="choice">
-          <p>In the CSS file</p>
-        </div>
-      </div>
-    </section>
+      <button id="submit_btn">Submit</button>
+    </div>
 
     <script src="assets/script.js"></script>
   </body>
